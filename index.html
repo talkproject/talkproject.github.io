@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Talk Project</title>
+  <link href='//fonts.googleapis.com/css?family=Roboto:400,400italic,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/syntax.css">
+  <link rel="stylesheet" href="css/solo.css">
+
+</head>
+<body>
+  <div class="container">
+    <h1><a href="./">The Talk Project</a></h1>
+    
+<p><img src="http://s3.sammachin.com/TalkProjectLogo_128.png" alt="Mou icon" /></p>
+
+<h2 id="background">Background</h2>
+<p>Many communication networks exist, Email, Phone calls, twitter, Skype, Facebook Viber, WhatsApp AIM, etc. 
+However with the exception of the first two these are all closed private networks, the network, addressing, identity and features are all at the control of a single entity usually a commercial corporation. If you want to contact someone via one of these networks then you must have an account on this network, this creates fragmentation as users must maintain multiple identities and addresses. 
+Whilst this can have advantages as it allows users to partition groups of contacts onto separate networks eg skype for work facebook for personal it also can create problems, many networks will only allow a single person to have a single identity.
+Take email however, the combination of user@domain allows one person to maintain multiple profiles usually depending on their role, you can have a personal email address provided by someone like gmail and a work one from your employer, when you change jobs your work address can be closed as that persona has effectively ended and you get a new one with your new job. </p>
+
+<p>Email works because its it truly open, multiple service providers exist and users of one service can contact another, identity can  be detached from service provision via the use of domain names, if you own your domain that is your identity and you are free to take that to another service provider (or run your own service) without having to reset the identity.</p>
+
+<p>The phone network works in a similar, if slightly less open way, by the use of a global addressing plan (known as e.164 numbers) any subscriber of any provider can call another subscriber of a different provider. 
+However in the phone system the addressing and identity are the same thing, therefore the portability of identity between service providers has had to be built on top as an afterthought, this introduces certain limitations such as the lack of ability to move numbers internationally or sometimes even between types of service eg mobile &amp; fixed.</p>
+
+<p>The ubiquity of service provided by the phone networks comes about as a result of 2 things, international standards for interoperability and commercial agreements between carriers to interconnect each others traffic, however the agreements are not always in place and sometimes a subscriber of a smaller service finds themselves cut off from certain larger service providers. In addition this closed group facilitates the interests of larger carriers in 
+keeping out the small new dynamic players. It maintains the global telco monopoly.</p>
+
+<h2 id="enter-the-web">Enter the Web</h2>
+<p>The web is quite probabbly one of the greatest inventions in the last 30 years, its changin the dyanmic of many parts of everyday life and truely levels the playing field. Virtually all information and services are just a few clicks away. 
+As industries goe the web has probabbly one of the lowest barriers to entry, anyone can register a domain name and put up a page.</p>
+
+<h2 id="webrtc">WebRTC</h2>
+<p>WebRTC as an emerging standard starts to take the decentralised power of the internet and bring it to real time comms, however whilst WebRTC does a great job of making an open system for exchanging voice &amp; video it does not cover the addressing &amp; identity piece needed for a public communications network. Right now you have voice calls but you don’t have the ‘phone number’ equivalent in WebRTC.</p>
+
+<p>This has meant that there are a number of the existing communications service providers looking at WebRTC as a way to provide access to their network and replace the proprietary technologies in use today, however these are not creating a new open network rather using the ubiquity of the browser to enhance their existing networks.</p>
+
+<p>As a result of these slio networks even with all communication in a browser using WebRTC it is still a 2 stage process to contact a user, firstly open the communications service in a browser then contact the user on that service, in an truly open model you should be able to contact a user direct from the address bar of your browser.</p>
+
+<h2 id="social-graph">Social Graph</h2>
+<p>Most communications networks use some sort of social graph where members have an established relationship with each other and usually have to accept each other before communication can begin. This may also permit the use of enhanced features such as presence.
+However the 2 most widespread open comms networks (telephony and email) do not have this feature if you know someones address you can attempt to contact them, The control of receipt of communications is left up to the recipients system
+This is also important as not all relationships in a network are at the same level, you may wish for your bank to be able to contact you but you would not want to maintain a permanent relationship with their comms service nor see their presence.
+Traditional telephony has always had a cost to place a call indeed one of the central tenets has always been calling party pays, whilst this primarily exists to provide a revenue stream and business model to fund the infrastructure however it also has a couple of interesting side effects, a call is seen as more valuable form of communication and people tend to react better too it. Also by adding a cost &amp; effort it helps to decrease the amount of unsolicited junk calls (spam) however as the cost of calling approaches zero and the ability of cheap international labour this is increasing.
+Methods of retaining the value of real time comms should still be retained even in a web world where everything is free at the point of use.</p>
+
+<h2 id="identity-vs-address">Identity vs Address</h2>
+<p>Whilst there is a certain amount of commonality in the 2 they are not always the same thing, within the context of a communications network identity is used to confirm who a calling party is and possibly to authenticate them for the purpose of charging whereas address is the called party, in certain scenarios an address may not have a corresponding identity for example calling an organisation. However typically to have an identity you must have a corresponding address.
+As human’s we usually have multiple identies (or persona’s) when it comes to communications, in general these consist of a combination of person and organisation. Email is probabbly the best example of this, most of us will have at least 2 email addresses a personal one (often provided by Gmail, Hotmail etc) and a work one provided by the company. When we leave the company that work address ceases to exist, that persona has effectivly ended, and whenyou join a new organisation you take on a new persona. This has man advantages, it allows us to keep certain areas of our lives separate, you can quite safely ignore the work email account at the weekend without worrying about missing a social communication, and your company isn’t party to any of you social ativities.
+There is also another useful aspect the ability for an identity or address to belong to a role rather than an individual, mostly this is done in companies for example a support@example.com address where you don’t really care about the specific human that you are contacting just that you want a role.
+By there abstract nature phone numbers also allow this functionality, most people have at least a work and home number (or mobile) However some of this is also a by product of phone numbers being tied to devices or places, how often do you see someone’s email signature or business card with multiple numbers on it…..
+Modern social networks often make these features very difficult, either they all exist within the same namespace eg twitter which makes having person/org idenities awkward (hence the @JBlogs_MegaCorp type names) or even worse they require and enforce real names, this means one identity per human being. Often this is for reasons of control and advertising, marketers like real people, they can sell to real people, so Social networks their product (remember as a user you’re the product not the customer) to be clean neat and easily packaged.</p>
+
+
+  </div>
+
+</body>
+</html>
